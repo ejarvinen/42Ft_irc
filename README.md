@@ -17,11 +17,11 @@
 ## Installation
 1. Clone the repository:
 ```
-git clone https://github.com/ito-miyuki/ft_irc.git
+git clone https://github.com/ejarvinen/42Ft_irc.git
 ```
 2. Navigate to the project directory:
 ```
-cd ft_irc
+cd 42Ft_irc
 ```
 3. Compile the project:
 ```
