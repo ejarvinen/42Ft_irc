@@ -1,4 +1,4 @@
-# ft_irc
+# 42Ft_irc
 ## Description
 `ft_irc` is a project focused on creating a custom [IRC (Internet Relay Chat)](https://en.wikipedia.org/wiki/IRC) server in C++. The project aims to develop a functional IRC server capable of handling multiple client connections using TCP/IP while following established IRC standards. The server must manage user authentication, message forwarding, and channel operations. This server has been developed and tested with [irssi](https://irssi.org/).
 
