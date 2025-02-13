@@ -23,7 +23,6 @@ int Server::runServer() {
 	// handle signal here.
 	signal(SIGINT, handleSignal); // ctrl + c
 	signal(SIGQUIT, handleSignal); // 'ctrl + \'
-	signal(SIGTERM, handleSignal); // kill <PID>
 
 	setServerFd();
 	if (getServerFd() == -1) {
@@ -69,9 +68,8 @@ int Server::runServer() {
 		
 		if (pollCount < 0) {
 			if (errno == EINTR) {
-				std::cout << "Poll interrupted by signal" << std::endl;
 			} else {
-			std::cerr << "Poll failed" << std::endl;
+				std::cerr << "Poll failed" << std::endl;
 			} 
 			break;
 		}
